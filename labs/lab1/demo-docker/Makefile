@@ -20,7 +20,7 @@ docker-build: jar
 	docker images
 
 docker-run: docker-build
-	docker run --name demo-docker1 -td -p 81:8080 demo-docker	
+	docker run --name demo-docker -td -p 80:8080 demo-docker	
 	docker ps
 
 docker-clean:
